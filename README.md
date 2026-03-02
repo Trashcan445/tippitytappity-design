@@ -12,11 +12,13 @@ classDiagram
         + get_input() string
   }
   class TypeAccuracyChecker{
-        - words vector~string~
-        + get_random_word() string
         + compare_accuracy(string, string)
   }
   class TypeSpeedChecker{
         + get_speed() float
   }
+class WordBank{
+        - words vector~string~
+        + get_random_word() string
+}
 ```
