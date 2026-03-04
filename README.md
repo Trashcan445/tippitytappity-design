@@ -7,9 +7,9 @@ tippitytappity is a program to practice typing
 
 ```mermaid
 classDiagram
-class UserInput{
+class User{
       - username string
-      - history vecotr~TypingTest~
+      - history vector~TypingTest~
       + get_input() string
 }
 class TypingTest{
@@ -20,4 +20,6 @@ class WordBank{
         - words vector~string~
         + get_random_word() string
 }
+User-->TypingTest
+TypingTest-->WordBank
 ```
