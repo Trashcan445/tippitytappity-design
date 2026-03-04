@@ -13,6 +13,7 @@ class User{
       + get_input() string
 }
 class TypingTest{
+  - bank WordBank
   + compare_accuracy(string, string) float
   + get_speed()
 }
